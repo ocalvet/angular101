@@ -1,0 +1,17 @@
+<DOCTYPE html!>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  </head>
+  <body ng-app="angular101" ng-controller="AppCtrl as app">
+
+    <h1>{{ app.title }}</h1>
+    
+    <button ng-click="app.sayHello()">Say Hello</button>
+    
+    <input type="text" ng-model="app.value">
+    <h2>{{ app.value }}</h2>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
